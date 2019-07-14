@@ -16,6 +16,9 @@ branch --all
 	ブランチ一覧。*がカレント。
 	allつけるとリモート追跡ブランチも含める。
 
+push
+	ローカルブランチの状態をリモートに反映する。
+
 fetch
 	リモートの最新状態をローカルのリモート追跡ブランチに反映する。
 	引数なしのときデフォルトのorigin/masterを更新する。
@@ -61,6 +64,10 @@ git mergetool コンフリクトしたファイル
 rm  コンフリクトしたファイル.orig
 git commit
 git status
+
+
+# ブランチ履歴
+git log --graph --branches --pretty=format:"[%cd]%d \"%s\"" --date=format:'%y/%m/%d %H:%M:%S'
 
 
 # 編集内容キャンセル(revert)
