@@ -63,6 +63,11 @@ git commit
 git status
 
 
+# 編集内容キャンセル(revert)
+git reset --hard HEAD         # 直前のコミットの状態に戻る
+git checkout HEAD ファイル名  # 指定したファイルのみ直前のコミットの状態に戻る
+
+
 # フリー
 なんでも書いていいぞ。
 
