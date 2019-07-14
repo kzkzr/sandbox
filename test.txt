@@ -53,6 +53,16 @@ support	リモート。旧バージョンでバグ発生時、masterから派生
 	リモートのorigin/masterが追跡対象。
 
 
+# マージ
+git checkout 親ブランチ
+git merge 子ブランチ
+git status
+git mergetool コンフリクトしたファイル
+rm  コンフリクトしたファイル.orig
+git commit
+git status
+
+
 # フリー
 なんでも書いていいぞ。
 
